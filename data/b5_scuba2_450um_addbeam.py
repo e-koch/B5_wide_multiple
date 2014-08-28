@@ -1,8 +1,9 @@
 import os
 from astropy.io import fits
 
-file_scuba2_raw='B5_450um_ext_v2.fits'
-file_scuba2_out='B5_450um_ext_v2_beam.fits'
+file_scuba2_raw='B5_450um_ext_v2_regrid.fits'
+file_scuba2_out='B5_450um_ext_v2_regrid_beam.fits'
+
 hdu = fits.open(file_scuba2_raw)
 hdr =hdu[0].header
 data=hdu[0].data
